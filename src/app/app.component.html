@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+<button class="btn" (click)="change()"><Details></Details></button>
+<div *ngIf="isShow" class="paragraph">Please press button 'Details'</div>
+<p
+  *ngFor="let item of number"
+  [ngClass]="item >= 5 ? 'special' : ''"
+  [ngStyle]="{ backgroundColor: item >= 5 ? 'blue' : '' }"
+>
+  {{ item }}
+</p>
